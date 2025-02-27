@@ -112,15 +112,15 @@ else:
             'PASSWORD': os.environ.get('DBPASS'),
         }
     }
-    CACHES = {
-        "default": {  
-            "BACKEND": "django_redis.cache.RedisCache",
-            "LOCATION": os.environ.get('CACHELOCATION'),
-            "OPTIONS": {
-                "CLIENT_CLASS": "django_redis.client.DefaultClient",
-            },
-        }
-    }
+    # CACHES = {
+    #     "default": {  
+    #         "BACKEND": "django_redis.cache.RedisCache",
+    #         "LOCATION": os.environ.get('CACHELOCATION'),
+    #         "OPTIONS": {
+    #             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+    #         },
+    #     }
+    # }
 
 
 # Password validation
